@@ -5,6 +5,7 @@ import Main from './views/Main.vue'
 import Table from './views/nav1/Table.vue'
 
 import menuManage from './views/menu/index.vue'  //菜品管理
+import menuList from './views/menu/list.vue'  //菜品列表
 
 import Form from './views/nav1/Form.vue'
 import user from './views/nav1/user.vue'
@@ -47,6 +48,17 @@ let routes = [
             { path: '/menuManage', component: menuManage, name: '菜品管理' }
         ]
         
+    },
+    {
+        path: '/menu',
+        component: Home,
+        hidden: true,
+        name: '菜品管理',
+        leaf: true,//只有一个节点
+        iconCls: 'el-icon-setting',//图标样式class
+        children: [
+            { path: '/menuList', component: menuList, name: '菜品管理' }
+        ]
     },
     {
         path: '/tables',

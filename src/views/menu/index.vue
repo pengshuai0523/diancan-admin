@@ -5,7 +5,7 @@
                 <h5 class="header">
                     <p class="tit">超值套餐</p>
                     <p class="opt">
-                        <span>+添加</span>
+                        <span @click="addClassify()">+添加</span>
                         <span>详情</span>
                     </p>
                 </h5>
@@ -72,8 +72,8 @@
                 <h5 class="header">
                     <p class="tit">超值套餐</p>
                     <p class="opt">
-                        <span>+添加</span>
-                        <span>详情</span>
+                        <span @click="addClassify()">+添加</span>
+                        <span @click="goDetail()">详情</span>
                     </p>
                 </h5>
                 <ul class="list">
@@ -140,7 +140,24 @@
 </template>
 <script>
 export default {
-    
+    mounted () {
+        this.addClassify()
+    },
+    methods : {
+        // 添加分类
+        addClassify () {
+            this.$prompt('请输入分类名称','提示',{
+            confirmButtonText: '确定',
+            cancelButtonText: '取消',
+            }).then(({value}) => {
+                alert(value)
+            })
+        },
+        // 跳到列表页
+        goDetail () {
+            this.$router.push({path:'/menuList'})
+        }
+    }
 }
 </script>
 <style lang="scss" scoped>
@@ -173,6 +190,7 @@ export default {
                 color:#fff;
                 text-align: center;border-radius:20px;
                 background:#FA5B25;
+                cursor: pointer;
             }
             
         }
