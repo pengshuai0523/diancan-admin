@@ -57,7 +57,9 @@ let routes = [
         leaf: true,//只有一个节点
         iconCls: 'el-icon-setting',//图标样式class
         children: [
-            { path: '/menuList', component: menuList, name: '菜品管理' }
+            { path: '/menuList', component: menuList, name: '菜品管理' },
+            { path: '/menuAdd', component: menuList, name: '菜品管理' }
+
         ]
     },
     {
