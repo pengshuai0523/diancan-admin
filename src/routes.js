@@ -6,6 +6,8 @@ import Table from './views/nav1/Table.vue'
 
 import menuManage from './views/menu/index.vue'  //菜品管理
 import menuList from './views/menu/list.vue'  //菜品列表
+import memberManage from './views/member/index.vue'  //会员列表
+
 
 import Form from './views/nav1/Form.vue'
 import user from './views/nav1/user.vue'
@@ -69,7 +71,7 @@ let routes = [
         leaf: true,//只有一个节点
         iconCls: 'el-icon-setting',//图标样式class
         children: [
-            { path: '/page3', component: Page6, name: '桌台管理' }
+            { path: '/page3', component: memberManage, name: '桌台管理' }
         ]
     },
     {
@@ -79,7 +81,7 @@ let routes = [
         name: '会员管理',
         iconCls: 'el-icon-setting',//图标样式class
         children: [
-            { path: '/page4', component: Page6, name: '会员管理' }
+            { path: '/memberManage', component: memberManage, name: '会员管理' }
         ]
     },
     {
