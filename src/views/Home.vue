@@ -241,7 +241,7 @@
 				width: 230px;
 			}
 			.content-container {
-				// background: #f1f2f7;
+				background: #f1f2f7;
 				flex:1;
 				// position: absolute;
 				// right: 0px;
@@ -262,7 +262,6 @@
 					}
 				}
 				.content-wrapper {
-					background-color: #fff;
 					box-sizing: border-box;
 				}
 			}

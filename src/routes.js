@@ -7,6 +7,7 @@ import Table from './views/nav1/Table.vue'
 import menuManage from './views/menu/index.vue'  //菜品管理
 import menuList from './views/menu/list.vue'  //菜品列表
 import memberManage from './views/member/index.vue'  //会员列表
+import staffManage from './views/staff/index.vue'  //会员列表
 
 
 import Form from './views/nav1/Form.vue'
@@ -101,7 +102,7 @@ let routes = [
         leaf: true,//只有一个节点
         iconCls: 'el-icon-setting',//图标样式class
         children: [
-            { path: '/page6', component: Page6, name: '员工管理' }
+            { path: '/staffManage', component: staffManage, name: '员工管理' }
         ]
     },
     {
