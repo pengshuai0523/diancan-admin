@@ -281,9 +281,11 @@ export default {
             border-bottom:1px solid #ccc;
             span{
                 display: inline-block;
-                width:100px;height:30px;line-height: 30px;
+                width:100px;height:30px;
+                line-height: 30px;
                 color:#fff;
-                text-align: center;border-radius:20px;
+                text-align: center;
+                border-radius:20px;
                 cursor: pointer;
                 margin-left: 15px;
             }

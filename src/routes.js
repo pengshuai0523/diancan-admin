@@ -10,7 +10,8 @@ import memberManage from './views/member/index.vue'  //会员列表
 import staffManage from './views/staff/index.vue'  //会员列表
 
 
-import tableManage from './views/tables/index.vue'
+import tableManage from './views/tables/index.vue' //桌台管理
+import marketManage from './views/marketing/index.vue' //桌台管理
 
 import Form from './views/nav1/Form.vue'
 import user from './views/nav1/user.vue'
@@ -94,7 +95,7 @@ let routes = [
         leaf: true,//只有一个节点
         iconCls: 'el-icon-setting',//图标样式class
         children: [
-            { path: '/page5', component: Page6, name: '营销管理' }
+            { path: '/marketManage', component: marketManage, name: '营销管理' }
         ]
     },
     {
