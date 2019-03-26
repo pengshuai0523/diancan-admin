@@ -12,6 +12,7 @@ import staffManage from './views/staff/index.vue'  //会员列表
 
 import tableManage from './views/tables/index.vue' //桌台管理
 import marketManage from './views/marketing/index.vue' //桌台管理
+import echartsManage from './views/charts/index.vue'
 
 import Form from './views/nav1/Form.vue'
 import user from './views/nav1/user.vue'
@@ -158,6 +159,7 @@ let routes = [
         name: 'Charts',
         iconCls: 'fa fa-bar-chart',
         children: [
+            { path: '/echartsManage', component: echartsManage, name: 'echarts' },
             { path: '/echarts', component: echarts, name: 'echarts' }
         ]
     },
