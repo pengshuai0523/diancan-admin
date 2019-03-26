@@ -91,6 +91,76 @@
                 </ul>
             </div>
         </div>
+        <div class="dayChar">
+            <h5 class="header">日营业数据图表</h5>
+            <el-row class="char">
+                <el-col :span="24">
+                    <div id="chartLine" style="width:100%; height:400px;"></div>
+                </el-col>
+            </el-row>
+            <div class="dayData">
+                <ul class="list">
+                    <li>
+                        <span class="top">6888.00</span>
+                        <span class="bottom">实收(元)</span>
+                    </li>
+                    <li>
+                        <span class="top">6888.00</span>
+                        <span class="bottom">实收(元)</span>
+                    </li>
+                    <li>
+                        <span class="top">6888.00</span>
+                        <span class="bottom">实收(元)</span>
+                    </li>
+                    <li>
+                        <span class="top">6888.00</span>
+                        <span class="bottom">实收(元)</span>
+                    </li>
+                    <li>
+                        <span class="top">6888.00</span>
+                        <span class="bottom">实收(元)</span>
+                    </li>
+                    <li>
+                        <span class="top">6888.00</span>
+                        <span class="bottom">实收(元)</span>
+                    </li>
+                    <li>
+                        <span class="top">6888.00</span>
+                        <span class="bottom">实收(元)</span>
+                    </li>
+                </ul>
+                <ul class="list">
+                    <li>
+                        <span class="top">6888.00</span>
+                        <span class="bottom">实收(元)</span>
+                    </li>
+                    <li>
+                        <span class="top">6888.00</span>
+                        <span class="bottom">实收(元)</span>
+                    </li>
+                    <li>
+                        <span class="top">6888.00</span>
+                        <span class="bottom">实收(元)</span>
+                    </li>
+                    <li>
+                        <span class="top">6888.00</span>
+                        <span class="bottom">实收(元)</span>
+                    </li>
+                    <li>
+                        <span class="top">6888.00</span>
+                        <span class="bottom">实收(元)</span>
+                    </li>
+                    <li>
+                        <span class="top">6888.00</span>
+                        <span class="bottom">实收(元)</span>
+                    </li>
+                    <li>
+                        <span class="top">6888.00</span>
+                        <span class="bottom">实收(元)</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </section>
 </template>
 
@@ -209,6 +279,7 @@
         }
     }
     .dayChar{
+        padding: 0 20px;
         .header{
             font-size: 16px;
             color: #383004;
@@ -224,12 +295,12 @@
                 display: flex;
                 flex-direction: row;
                 margin-bottom: 20px;
+                justify-content: space-between;
                 li{
                     width: 220px;
                     height: 100px;
-                    margin-left: 20px;
                     background: #FFFFFF;
-                    box-shadow: 0 2px 4px 0;
+                    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
                     text-align: center;
                     display: flex;
                     flex-direction: column;
